@@ -1,10 +1,10 @@
 version = 0.1
-[production.deploy.parameters]
-stack_name = "todo-list-aws-production"
+[staging.deploy.parameters]
+stack_name = "todo-list-aws-staging"
 resolve_s3 = true
-s3_prefix = "todo-list-aws-production"
+s3_prefix = "todo-list-aws-staging"
 region = "us-east-1"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
-parameter_overrides = "Stage=\"production\""
+parameter_overrides = "Stage=\"staging\""
 image_repositories = []
